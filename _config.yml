@@ -12,14 +12,14 @@
 
 #theme                  : "minimal-mistakes-jekyll"
 remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dark" #"default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum",
 
 # Site Settings
 locale                   : "en-US"
 title                    : "Portfolio"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
+name                     : "Bhuwn Dutt"
 description              : "Hi welcome to my portfolio website. Yopu can reach out to me on through my email or linkedIn"
 url                      : "https://bhuwandutt.github.io" # e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -106,8 +106,8 @@ analytics:
 author:
   name             : "Bhuwan Dutt"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  bio              : "I am a **Data Scientist**"
+  location         : "Ontario, Canada"
   email            :
   links:
     - label: "Email"
@@ -290,3 +290,10 @@ defaults:
       comments: # true
       share: true
       related: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+

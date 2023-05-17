@@ -23,7 +23,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Portfolio">
 <meta property="og:title" content="Analyse Public Opinion of Covid Vaccines">
-<meta property="og:url" content="http://localhost:4000/birthday/">
+<meta property="og:url" content="http://localhost:4000/Project1/">
 
 
   <meta property="og:description" content="I did this project back in March 2021. I had just started with my Masters in Computer Science program and because of the pandemic the university was online. It was a grim time as India was battling with its second and the deadliest wave of Covid. Vaccines had recently rolled out in India and most of us were still struggling to book an appointment. But there was a  lot of uncertainties among public regarding the vaccines as there were at least 5 different vaccines that have  been introduced in market.">
@@ -45,7 +45,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/birthday/">
+<link rel="canonical" href="http://localhost:4000/Project1/">
 
 
 
@@ -55,7 +55,7 @@
     "@context": "https://schema.org",
     
       "@type": "Person",
-      "name": "Your Name",
+      "name": "Bhuwn Dutt",
       "url": "http://localhost:4000/"
     
   }
@@ -96,7 +96,7 @@
 
   </head>
 
-  <body class="layout--posts">
+  <body class="layout--single">
     <nav class="skip-links">
   <ul>
     <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
@@ -117,7 +117,11 @@
           
         </a>
         <ul class="visible-links"><li class="masthead__menu-item">
-              <a href="https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/">Quick-Start Guide</a>
+              <a href=""></a>
+            </li><li class="masthead__menu-item">
+              <a href="/_pages/aboutme.md">About Me</a>
+            </li><li class="masthead__menu-item">
+              <a href="/posts-archive/" title="The Projects I have done so far !">Projects</a>
             </li></ul>
         
         <button class="greedy-nav__toggle hidden" type="button">
@@ -133,6 +137,8 @@
 
     <div class="initial-content">
       
+
+
 
 
 
@@ -152,7 +158,7 @@
     </h3>
     
       <div class="author__bio p-note" itemprop="description">
-        <p>I am an <strong>amazing</strong> person.</p>
+        <p>I am a <strong>Data Scientist</strong></p>
 
       </div>
     
@@ -163,7 +169,7 @@
     <ul class="author__urls social-icons">
       
         <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
-          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Somewhere</span>
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Ontario, Canada</span>
         </li>
       
 
@@ -251,145 +257,20 @@
 
 
 
-  <div class="archive">
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Analyse Public Opinion of Covid Vaccines">
+    <meta itemprop="description" content="I did this project back in March 2021. I had just started with my Masters in Computer Science program and because of thepandemic the university was online. It was a grim time as India was battling with its second and the deadliest wave of Covid.Vaccines had recently rolled out in India and most of us were still struggling to book an appointment. But there was a lot of uncertainties among public regarding the vaccines as there were at least 5 different vaccines that have been introduced in market.">
+    <meta itemprop="datePublished" content="2023-01-27T00:00:00-05:00">
     
-      <h1 id="page-title" class="page__title">Analyse Public Opinion of Covid Vaccines</h1>
-    
-    <p>I did this project back in March 2021. I had just started with my Masters in Computer Science program and because of the
-pandemic the university was online. It was a grim time as India was battling with its second and the deadliest wave of Covid.
-Vaccines had recently rolled out in India and most of us were still struggling to book an appointment. But there was a 
-lot of uncertainties among public regarding the vaccines as there were at least 5 different vaccines that have 
-been introduced in market.</p>
 
-<p><img src="../media/giphy.gif" alt="" /></p>
-
-<p>During that time, I had just started exploring the field of NLP, and was eager to put my hands on it. So I thought why 
-not use the NLP to analyse the sentiments of public regarding different vaccines. I had previous experience in web scraping 
-and there is no better way to learn than to apply it to a real world problem.</p>
-
-<p>Now, this was at the time when Large Language Models were unheard of, and every problem was bein g solved using some
-kind of Neural Network, but because I wanted this to be an introduction to NLP, I wen twith the tradition ML based NLP.</p>
-
-<h3 id="dataset">DATASET</h3>
-
-<p>First things first</p>
-
-<h2 id="horizontal-rules">Horizontal Rules</h2>
-
-<hr />
-
-<hr />
-
-<hr />
-
-<h2 id="typographic-replacements">Typographic replacements</h2>
-
-<p>Enable typographer option to see result.</p>
-
-<p>(c) (C) (r) (R) (tm) (TM) (p) (P) +-</p>
-
-<p>test.. test… test….. test?….. test!….</p>
-
-<p>!!!!!! ???? ,,  – —</p>
-
-<p>“Smartypants, double quotes” and ‘single quotes’</p>
-
-<h2 id="emphasis">Emphasis</h2>
-
-<p><strong>This is bold text</strong></p>
-
-<p><strong>This is bold text</strong></p>
-
-<p><em>This is italic text</em></p>
-
-<p><em>This is italic text</em></p>
-
-<p><del>Strikethrough</del></p>
-
-<h2 id="blockquotes">Blockquotes</h2>
-
-<blockquote>
-  <p>Blockquotes can also be nested…</p>
-  <blockquote>
-    <p>…by using additional greater-than signs right next to each other…</p>
-    <blockquote>
-      <p>…or with spaces between arrows.</p>
-    </blockquote>
-  </blockquote>
-</blockquote>
-
-<h2 id="lists">Lists</h2>
-
-<p>Unordered</p>
-
-<ul>
-  <li>Create a list by starting a line with <code class="language-plaintext highlighter-rouge">+</code>, <code class="language-plaintext highlighter-rouge">-</code>, or <code class="language-plaintext highlighter-rouge">*</code></li>
-  <li>Sub-lists are made by indenting 2 spaces:
-    <ul>
-      <li>Marker character change forces new list start:
-        <ul>
-          <li>Ac tristique libero volutpat at</li>
-          <li>Facilisis in pretium nisl aliquet</li>
-          <li>Nulla volutpat aliquam velit</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li>Very easy!</li>
-</ul>
-
-<p>Ordered</p>
-
-<ol>
-  <li>Lorem ipsum dolor sit amet</li>
-  <li>Consectetur adipiscing elit</li>
-  <li>
-    <p>Integer molestie lorem at massa</p>
-  </li>
-  <li>You can use sequential numbers…</li>
-  <li>…or keep all the numbers as <code class="language-plaintext highlighter-rouge">1.</code></li>
-</ol>
-
-<p>Start numbering with offset:</p>
-
-<ol>
-  <li>foo</li>
-  <li>bar</li>
-</ol>
-
-
-<ul class="taxonomy__index">
-  
-  
-    <li>
-      <a href="#2023">
-        <strong>2023</strong> <span class="taxonomy__count">1</span>
-      </a>
-    </li>
-  
-</ul>
-
-
-
-
-  <section id="2023" class="taxonomy__section">
-    <h2 class="archive__subtitle">2023</h2>
-    <div class="entries-list">
+    <div class="page__inner-wrap">
       
-        
-
-
-
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/birthday/" rel="permalink">Analyse Public Opinion of Covid Vaccines
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/Project1/" class="u-url" itemprop="url">Analyse Public Opinion of Covid Vaccines
 </a>
-      
-    </h2>
-    
+          </h1>
+          
 
   <p class="page__meta">
     
@@ -410,19 +291,86 @@ kind of Neural Network, but because I wanted this to be an introduction to NLP, 
   </p>
 
 
-    <p class="archive__item-excerpt" itemprop="description">I did this project back in March 2021. I had just started with my Masters in Computer Science program and because of the
-pandemic the university was online. ...</p>
-  </article>
-</div>
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <p>I did this project back in March 2021. I had just started with my Masters in Computer Science program and because of the
+pandemic the university was online. It was a grim time as India was battling with its second and the deadliest wave of Covid.
+Vaccines had recently rolled out in India and most of us were still struggling to book an appointment. But there was a 
+lot of uncertainties among public regarding the vaccines as there were at least 5 different vaccines that have 
+been introduced in market.</p>
+
+<p><img src="../media/giphy.gif" alt="" /></p>
+
+<p>During that time, I had just started exploring the field of NLP, and was eager to put my hands on it. So I thought why 
+not use the NLP to analyse the sentiments of public regarding different vaccines. I had previous experience in web scraping 
+and there is no better way to learn than to apply it to a real world problem.</p>
+
+<p>Now, this was at the time when Large Language Models were unheard of, and every problem was being solved using some
+kind of Neural Network, but because I wanted this to be an introduction to NLP, I went with the tradition ML based NLP.</p>
+
+<h3 id="dataset">DATASET</h3>
+
+<p>First things first, to perform any kind of analysis, I needed the data. You can search online and find some good datasets
+find some datasets, like this <a href="https://www.kaggle.com/datasets/gpreda/all-covid19-vaccines-tweets">one</a>.
+But, public opinion can change over time, I couldn’t use an old dataset. So I decided to create my own dataset that has the most recent tweets.
+And to solve my problem, I used the <a href="https://www.tweepy.org">Tweepy</a>. Tweepy is a python library can filter tweets based on location, hashtags and language of tweets. This 
+feature came in handy to extract tweet from a particular region or tweets about a particular vaccine.</p>
+
+<h3 id="data-preprocessing">Data Preprocessing</h3>
+
+<p>If you have ever seen a tweet, you will know that tweets are not in textbook format. Tweets generally contains abbreviations,
+emojis, hashtags, shorthands, to keep things a little entertaining.</p>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2023-01-27T00:00:00-05:00">January 27, 2023</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Analyse+Public+Opinion+of+Covid+Vaccines%20http%3A%2F%2Flocalhost%3A4000%2FProject1%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2FProject1%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2FProject1%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
 
       
     </div>
-    <a href="#page-title" class="back-to-top">Back to top &uarr;</a>
-  </section>
 
+    
+  </article>
 
-  </div>
+  
+  
+    <div class="page__related">
+      <h2 class="page__related-title">You may also enjoy</h2>
+      <div class="grid__wrapper">
+        
+          
+            
+      </div>
+    </div>
+  
 </div>
+
     </div>
 
     
@@ -460,7 +408,7 @@ pandemic the university was online. ...</p>
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2023 Your Name. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2023 Bhuwn Dutt. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>

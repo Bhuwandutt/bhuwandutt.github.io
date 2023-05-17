@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-08T00:56:40-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Portfolio</title><subtitle>Hi welcome to my portfolio website. Yopu can reach out to me on through my email or linkedIn</subtitle><author><name>Bhuwan Dutt</name></author><entry><title type="html">Analyse Public Opinion of Covid Vaccines</title><link href="http://localhost:4000/birthday/" rel="alternate" type="text/html" title="Analyse Public Opinion of Covid Vaccines" /><published>2023-01-27T00:00:00-05:00</published><updated>2023-01-27T00:00:00-05:00</updated><id>http://localhost:4000/birthday</id><content type="html" xml:base="http://localhost:4000/birthday/">&lt;p&gt;I did this project back in March 2021. I had just started with my Masters in Computer Science program and because of the
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-16T22:41:21-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Portfolio</title><subtitle>Hi welcome to my portfolio website. Yopu can reach out to me on through my email or linkedIn</subtitle><author><name>Bhuwan Dutt</name></author><entry><title type="html">Analyse Public Opinion of Covid Vaccines</title><link href="http://localhost:4000/Project1/" rel="alternate" type="text/html" title="Analyse Public Opinion of Covid Vaccines" /><published>2023-01-27T00:00:00-05:00</published><updated>2023-01-27T00:00:00-05:00</updated><id>http://localhost:4000/birthday</id><content type="html" xml:base="http://localhost:4000/Project1/">&lt;p&gt;I did this project back in March 2021. I had just started with my Masters in Computer Science program and because of the
 pandemic the university was online. It was a grim time as India was battling with its second and the deadliest wave of Covid.
 Vaccines had recently rolled out in India and most of us were still struggling to book an appointment. But there was a 
 lot of uncertainties among public regarding the vaccines as there were at least 5 different vaccines that have 
@@ -10,92 +10,18 @@ been introduced in market.&lt;/p&gt;
 not use the NLP to analyse the sentiments of public regarding different vaccines. I had previous experience in web scraping 
 and there is no better way to learn than to apply it to a real world problem.&lt;/p&gt;
 
-&lt;p&gt;Now, this was at the time when Large Language Models were unheard of, and every problem was bein g solved using some
-kind of Neural Network, but because I wanted this to be an introduction to NLP, I wen twith the tradition ML based NLP.&lt;/p&gt;
+&lt;p&gt;Now, this was at the time when Large Language Models were unheard of, and every problem was being solved using some
+kind of Neural Network, but because I wanted this to be an introduction to NLP, I went with the tradition ML based NLP.&lt;/p&gt;
 
 &lt;h3 id=&quot;dataset&quot;&gt;DATASET&lt;/h3&gt;
 
-&lt;p&gt;First things first&lt;/p&gt;
+&lt;p&gt;First things first, to perform any kind of analysis, I needed the data. You can search online and find some good datasets
+find some datasets, like this &lt;a href=&quot;https://www.kaggle.com/datasets/gpreda/all-covid19-vaccines-tweets&quot;&gt;one&lt;/a&gt;.
+But, public opinion can change over time, I couldn’t use an old dataset. So I decided to create my own dataset that has the most recent tweets.
+And to solve my problem, I used the &lt;a href=&quot;https://www.tweepy.org&quot;&gt;Tweepy&lt;/a&gt;. Tweepy is a python library can filter tweets based on location, hashtags and language of tweets. This 
+feature came in handy to extract tweet from a particular region or tweets about a particular vaccine.&lt;/p&gt;
 
-&lt;h2 id=&quot;horizontal-rules&quot;&gt;Horizontal Rules&lt;/h2&gt;
+&lt;h3 id=&quot;data-preprocessing&quot;&gt;Data Preprocessing&lt;/h3&gt;
 
-&lt;hr /&gt;
-
-&lt;hr /&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;typographic-replacements&quot;&gt;Typographic replacements&lt;/h2&gt;
-
-&lt;p&gt;Enable typographer option to see result.&lt;/p&gt;
-
-&lt;p&gt;(c) (C) (r) (R) (tm) (TM) (p) (P) +-&lt;/p&gt;
-
-&lt;p&gt;test.. test… test….. test?….. test!….&lt;/p&gt;
-
-&lt;p&gt;!!!!!! ???? ,,  – —&lt;/p&gt;
-
-&lt;p&gt;“Smartypants, double quotes” and ‘single quotes’&lt;/p&gt;
-
-&lt;h2 id=&quot;emphasis&quot;&gt;Emphasis&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;This is bold text&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;This is bold text&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;This is italic text&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;This is italic text&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;del&gt;Strikethrough&lt;/del&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;blockquotes&quot;&gt;Blockquotes&lt;/h2&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Blockquotes can also be nested…&lt;/p&gt;
-  &lt;blockquote&gt;
-    &lt;p&gt;…by using additional greater-than signs right next to each other…&lt;/p&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;…or with spaces between arrows.&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/blockquote&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;lists&quot;&gt;Lists&lt;/h2&gt;
-
-&lt;p&gt;Unordered&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Create a list by starting a line with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;+&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-&lt;/code&gt;, or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;*&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Sub-lists are made by indenting 2 spaces:
-    &lt;ul&gt;
-      &lt;li&gt;Marker character change forces new list start:
-        &lt;ul&gt;
-          &lt;li&gt;Ac tristique libero volutpat at&lt;/li&gt;
-          &lt;li&gt;Facilisis in pretium nisl aliquet&lt;/li&gt;
-          &lt;li&gt;Nulla volutpat aliquam velit&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Very easy!&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Ordered&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
-  &lt;li&gt;Consectetur adipiscing elit&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Integer molestie lorem at massa&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;You can use sequential numbers…&lt;/li&gt;
-  &lt;li&gt;…or keep all the numbers as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1.&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Start numbering with offset:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;foo&lt;/li&gt;
-  &lt;li&gt;bar&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>Bhuwan Dutt</name></author><summary type="html">I did this project back in March 2021. I had just started with my Masters in Computer Science program and because of the pandemic the university was online. It was a grim time as India was battling with its second and the deadliest wave of Covid. Vaccines had recently rolled out in India and most of us were still struggling to book an appointment. But there was a lot of uncertainties among public regarding the vaccines as there were at least 5 different vaccines that have been introduced in market.</summary></entry></feed>
+&lt;p&gt;If you have ever seen a tweet, you will know that tweets are not in textbook format. Tweets generally contains abbreviations,
+emojis, hashtags, shorthands, to keep things a little entertaining.&lt;/p&gt;</content><author><name>Bhuwan Dutt</name></author><summary type="html">I did this project back in March 2021. I had just started with my Masters in Computer Science program and because of the pandemic the university was online. It was a grim time as India was battling with its second and the deadliest wave of Covid. Vaccines had recently rolled out in India and most of us were still struggling to book an appointment. But there was a lot of uncertainties among public regarding the vaccines as there were at least 5 different vaccines that have been introduced in market.</summary></entry></feed>
