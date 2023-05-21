@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Analyse Public Opinion of Covid Vaccines - Portfolio</title>
-<meta name="description" content="I did this project back in March 2021. I had just started with my Masters in Computer Science program and because of the pandemic the university was online. It was a grim time as India was battling with its second and the deadliest wave of Covid. Vaccines had recently rolled out in India and most of us were still struggling to book an appointment. But there was a  lot of uncertainties among public regarding the vaccines as there were at least 5 different vaccines that have  been introduced in market.">
+<!-- begin _includes/seo.html --><title>Analyse Public Opinion of Covid Vaccines - Bhuwan Portfolio</title>
+<meta name="description" content="Background">
 
 
   <meta name="author" content="Bhuwan Dutt">
@@ -21,12 +21,12 @@
 
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
-<meta property="og:site_name" content="Portfolio">
+<meta property="og:site_name" content="Bhuwan Portfolio">
 <meta property="og:title" content="Analyse Public Opinion of Covid Vaccines">
 <meta property="og:url" content="http://localhost:4000/Project1/">
 
 
-  <meta property="og:description" content="I did this project back in March 2021. I had just started with my Masters in Computer Science program and because of the pandemic the university was online. It was a grim time as India was battling with its second and the deadliest wave of Covid. Vaccines had recently rolled out in India and most of us were still struggling to book an appointment. But there was a  lot of uncertainties among public regarding the vaccines as there were at least 5 different vaccines that have  been introduced in market.">
+  <meta property="og:description" content="Background">
 
 
 
@@ -39,10 +39,6 @@
 
 
 
-
-  
-
-  
 
 
 <link rel="canonical" href="http://localhost:4000/Project1/">
@@ -71,7 +67,7 @@
 
 
 
-  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Portfolio Feed">
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Bhuwan Portfolio Feed">
 
 
 <!-- https://t.co/dKP3o1e -->
@@ -113,7 +109,7 @@
       <nav id="site-nav" class="greedy-nav">
         
         <a class="site-title" href="/">
-          Portfolio
+          Bhuwan Portfolio
           
         </a>
         <ul class="visible-links"><li class="masthead__menu-item">
@@ -259,7 +255,7 @@
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Analyse Public Opinion of Covid Vaccines">
-    <meta itemprop="description" content="I did this project back in March 2021. I had just started with my Masters in Computer Science program and because of thepandemic the university was online. It was a grim time as India was battling with its second and the deadliest wave of Covid.Vaccines had recently rolled out in India and most of us were still struggling to book an appointment. But there was a lot of uncertainties among public regarding the vaccines as there were at least 5 different vaccines that have been introduced in market.">
+    <meta itemprop="description" content="Background">
     <meta itemprop="datePublished" content="2023-01-27T00:00:00-05:00">
     
 
@@ -284,7 +280,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          1 minute read
+          5 minute read
         
       </span>
     
@@ -296,7 +292,10 @@
 
       <section class="page__content e-content" itemprop="text">
         
-        <p>I did this project back in March 2021. I had just started with my Masters in Computer Science program and because of the
+        <h1 id="background">Background</h1>
+
+<hr />
+<p>I did this project back in March 2021. I had just started with my Masters in Computer Science program and because of the
 pandemic the university was online. It was a grim time as India was battling with its second and the deadliest wave of Covid.
 Vaccines had recently rolled out in India and most of us were still struggling to book an appointment. But there was a 
 lot of uncertainties among public regarding the vaccines as there were at least 5 different vaccines that have 
@@ -308,22 +307,147 @@ been introduced in market.</p>
 not use the NLP to analyse the sentiments of public regarding different vaccines. I had previous experience in web scraping 
 and there is no better way to learn than to apply it to a real world problem.</p>
 
-<p>Now, this was at the time when Large Language Models were unheard of, and every problem was being solved using some
+<p>Now, this was at the time when Large Language Models (<a href="https://chat.openai.com">ChatGPT</a>) were unheard of, and every problem was being solved using some
 kind of Neural Network, but because I wanted this to be an introduction to NLP, I went with the tradition ML based NLP.</p>
 
-<h3 id="dataset">DATASET</h3>
+<h1 id="dataset">Dataset</h1>
 
-<p>First things first, to perform any kind of analysis, I needed the data. You can search online and find some good datasets
-find some datasets, like this <a href="https://www.kaggle.com/datasets/gpreda/all-covid19-vaccines-tweets">one</a>.
-But, public opinion can change over time, I couldn’t use an old dataset. So I decided to create my own dataset that has the most recent tweets.
-And to solve my problem, I used the <a href="https://www.tweepy.org">Tweepy</a>. Tweepy is a python library can filter tweets based on location, hashtags and language of tweets. This 
+<hr />
+
+<p>I don’t know about you, but finding the dataset has been the most time-consuming step in my project’s lifecycle. But I took a different approach with this. First things first, to perform any kind of analysis,You can search online and find some good datasets find some datasets, like this <a href="https://www.kaggle.com/datasets/gpreda/all-covid19-vaccines-tweets">one</a>. But, public opinion can change over time, I couldn’t use an old dataset. So I decided to create my own dataset that has the most recent tweets. And to solve my problem, (I used Tweepy)[https://tweepy.readthedocs.org]. Tweepy is a python library that lets you interact with Twitter API. Tweepy can filter tweets based on location, hashtags and language of tweets. This 
 feature came in handy to extract tweet from a particular region or tweets about a particular vaccine.</p>
 
-<h3 id="data-preprocessing">Data Preprocessing</h3>
+<!--I used the [twint](https://github.com/twintproject/twint). Twint is a beautiful libraby that lets your scrape tweets right off the hook. (You don't have to register for an api either.) 
+-->
 
-<p>If you have ever seen a tweet, you will know that tweets are not in textbook format. Tweets generally contains abbreviations,
-emojis, hashtags, shorthands, to keep things a little entertaining.</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="kn">import</span> <span class="nn">tweepy</span>
+    <span class="c1">#Put your Bearer Token in the parenthesis below
+</span>    <span class="n">client</span> <span class="o">=</span> <span class="n">tweepy</span><span class="p">.</span><span class="n">Client</span><span class="p">(</span><span class="n">bearer_token</span><span class="o">=</span><span class="s">'Change this'</span><span class="p">)</span>
 
+    <span class="c1"># Get tweets that contain the hashtag #Pfizer
+</span>    <span class="c1"># -is:retweet means I don't want retweets
+</span>    <span class="c1"># lang:en is asking for the tweets to be in english
+</span>    <span class="n">query</span> <span class="o">=</span> <span class="s">'#Pfizer -is:retweet lang:en'</span>
+    <span class="n">tweets</span> <span class="o">=</span> <span class="n">tweepy</span><span class="p">.</span><span class="n">Paginator</span><span class="p">(</span><span class="n">client</span><span class="p">.</span><span class="n">search_recent_tweets</span><span class="p">,</span> <span class="n">query</span><span class="o">=</span><span class="n">query</span><span class="p">,</span>
+                                <span class="n">tweet_fields</span><span class="o">=</span><span class="p">[</span><span class="s">'context_annotations'</span><span class="p">,</span> <span class="s">'created_at'</span><span class="p">],</span> <span class="n">max_results</span><span class="o">=</span><span class="mi">100</span><span class="p">).</span><span class="n">flatten</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h1 id="data-pre-processing">Data Pre-Processing</h1>
+
+<hr />
+
+<p>If you have ever seen a tweet, you will know that tweets are not in textbook format. Tweets generally contains slangs, abbreviations,
+emojis, hashtags, shorthands, which makes the data-preprocessing a little trickier.</p>
+
+<p><img src="../media/GSTweet.png" alt="WTF Tweet!" /></p>
+
+<p>Take example of the above tweet. This tweet contains informal language and emojis, and if you have used Twitter before, you would know that’s pretty much an average tweet looks like. But unfortunately, computer doesn’t understand the meaning of emojis and slang. Now looking at tweets, one choice of processing would be to delete these abbreviations and emojis but that would change the sentiment of tweet altogether. Like this, every data processing problem is unique and the steps you take to handle data completely depends on the kind of data you have and what is your objective. For my problem I changed the emojis to their corresponding meaning and lemmatized the abbreviations. There are various libraries that exist to  achieve this task, or you can make your own functions. Something like this one. :-</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">decontracted</span><span class="p">(</span><span class="n">phrase</span><span class="p">):</span>
+    <span class="c1"># specific
+</span>    <span class="n">phrase</span> <span class="o">=</span> <span class="n">re</span><span class="p">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s">"won\'t"</span><span class="p">,</span> <span class="s">"will not"</span><span class="p">,</span> <span class="n">phrase</span><span class="p">)</span>
+    <span class="n">phrase</span> <span class="o">=</span> <span class="n">re</span><span class="p">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s">"can\'t"</span><span class="p">,</span> <span class="s">"can not"</span><span class="p">,</span> <span class="n">phrase</span><span class="p">)</span>
+    <span class="n">phrase</span> <span class="o">=</span> <span class="n">re</span><span class="p">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s">"cant"</span><span class="p">,</span> <span class="s">"can not"</span><span class="p">,</span> <span class="n">phrase</span><span class="p">)</span>
+    <span class="n">phrase</span> <span class="o">=</span> <span class="n">re</span><span class="p">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s">"y'all"</span><span class="p">,</span> <span class="s">"you all"</span><span class="p">,</span> <span class="n">phrase</span><span class="p">)</span>
+    <span class="c1"># general
+</span>    <span class="n">phrase</span> <span class="o">=</span> <span class="n">re</span><span class="p">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s">"n\'t"</span><span class="p">,</span> <span class="s">" not"</span><span class="p">,</span> <span class="n">phrase</span><span class="p">)</span>
+    <span class="n">phrase</span> <span class="o">=</span> <span class="n">re</span><span class="p">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s">"\'re"</span><span class="p">,</span> <span class="s">" are"</span><span class="p">,</span> <span class="n">phrase</span><span class="p">)</span>
+    <span class="n">phrase</span> <span class="o">=</span> <span class="n">re</span><span class="p">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s">"\'s"</span><span class="p">,</span> <span class="s">" is"</span><span class="p">,</span> <span class="n">phrase</span><span class="p">)</span>   <span class="c1">#Using regular expressions to expand the contractions
+</span>    <span class="n">phrase</span> <span class="o">=</span> <span class="n">re</span><span class="p">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s">"\'d"</span><span class="p">,</span> <span class="s">" would"</span><span class="p">,</span> <span class="n">phrase</span><span class="p">)</span>
+    <span class="n">phrase</span> <span class="o">=</span> <span class="n">re</span><span class="p">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s">"\'ll"</span><span class="p">,</span> <span class="s">" will"</span><span class="p">,</span> <span class="n">phrase</span><span class="p">)</span>
+    <span class="n">phrase</span> <span class="o">=</span> <span class="n">re</span><span class="p">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s">"\'t"</span><span class="p">,</span> <span class="s">" not"</span><span class="p">,</span> <span class="n">phrase</span><span class="p">)</span>
+    <span class="n">phrase</span> <span class="o">=</span> <span class="n">re</span><span class="p">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s">"\'ve"</span><span class="p">,</span> <span class="s">" have"</span><span class="p">,</span> <span class="n">phrase</span><span class="p">)</span>
+    <span class="n">phrase</span> <span class="o">=</span> <span class="n">re</span><span class="p">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s">"\'m"</span><span class="p">,</span> <span class="s">" am"</span><span class="p">,</span> <span class="n">phrase</span><span class="p">)</span>
+    <span class="n">phrase</span> <span class="o">=</span> <span class="n">re</span><span class="p">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s">"\'scuse"</span><span class="p">,</span> <span class="s">" excuse "</span><span class="p">,</span> <span class="n">phrase</span><span class="p">)</span>
+
+<span class="k">return</span> <span class="n">phrase</span>
+</code></pre></div></div>
+<p>The functions takes a phrase and replaces common abbreviations into proper english. 
+You can find the complete Jupyter notebook (here)[https://github.com/Bhuwandutt/].</p>
+
+<h2 id="spacy">spaCy</h2>
+
+<p>To make things simpler and organized for me, I used <a href="https://spacy.io">spaCy</a>. spacY is a python library that is built for Natural Language Processing. I will use spaCy to create  data preparation <a href="https://spacy.io/usage/processing-pipelines">pipeline</a>. An example of an NLP pipeline can be :-</p>
+
+<p><img src="../media/spacy-pipeline.png" alt="" /></p>
+
+<p>We are going to create our own pipleine to prepare our data  that needs to be fed to our Machine Learning algorithm.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="kn">import</span> <span class="nn">spacy</span>
+
+<span class="n">nlp</span> <span class="o">=</span> <span class="n">spacy</span><span class="p">.</span><span class="n">load</span><span class="p">(</span><span class="s">'en_core_web_sm'</span><span class="p">)</span>
+<span class="n">stop_words</span> <span class="o">=</span> <span class="n">spacy</span><span class="p">.</span><span class="n">lang</span><span class="p">.</span><span class="n">en</span><span class="p">.</span><span class="n">stop_words</span><span class="p">.</span><span class="n">STOP_WORDS</span>
+<span class="n">df</span><span class="p">[</span><span class="s">'tweet'</span><span class="p">]</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s">'tweet'</span><span class="p">].</span><span class="nb">apply</span><span class="p">(</span><span class="n">p</span><span class="p">.</span><span class="n">clean</span><span class="p">)</span>
+
+<span class="c1"># Load English parser
+</span><span class="n">parser</span> <span class="o">=</span> <span class="n">English</span><span class="p">()</span>
+
+<span class="c1"># Creating our tokenizer function
+</span><span class="k">def</span> <span class="nf">spacy_tokenizer</span><span class="p">(</span><span class="n">sentence</span><span class="p">):</span>
+    
+    <span class="c1"># Creating our token object, which is used to create documents with linguistic annotations.
+</span>    <span class="n">mytokens</span> <span class="o">=</span> <span class="n">parser</span><span class="p">(</span><span class="n">sentence</span><span class="p">)</span>
+    
+    <span class="c1"># Lemmatizing each token and converting each token into lowercase
+</span>    <span class="n">mytokens</span> <span class="o">=</span> <span class="p">[</span> <span class="n">word</span><span class="p">.</span><span class="n">lemma_</span><span class="p">.</span><span class="n">lower</span><span class="p">().</span><span class="n">strip</span><span class="p">()</span> <span class="k">if</span> <span class="n">word</span><span class="p">.</span><span class="n">lemma_</span> <span class="o">!=</span> <span class="s">"-PRON-"</span> <span class="k">else</span> <span class="n">word</span><span class="p">.</span><span class="n">lower_</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">nlp</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">mytokens</span><span class="p">))]</span>
+    
+    <span class="c1"># Removing stop words
+</span>    <span class="n">mytokens</span> <span class="o">=</span> <span class="p">[</span> <span class="n">word</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">mytokens</span> <span class="k">if</span> <span class="n">word</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">stop_words</span> <span class="ow">and</span> <span class="n">word</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">punctuations</span> <span class="p">]</span>
+
+    <span class="c1"># return preprocessed list of tokens
+</span>    <span class="k">return</span> <span class="n">mytokens</span>
+
+</code></pre></div></div>
+
+<h1 id="the-machine-learning">The Machine Learning</h1>
+
+<hr />
+
+<p>As the title suggests, this where the “magic” happens. Though these machine learning algorithms have been shadowed by the GPT-3 and BERT but these algorithms are essential to learn to for a beginner to understand how math can make a machine learn patterns and predict very accurate outcomes.</p>
+
+<p>For my project I used <a href="https://www.youtube.com/watch?v=O2L2Uv9pdDA">Naive Bayes</a>, <a href="https://www.youtube.com/watch?v=J4Wdy0Wc_xQ">Random Forest</a>,<a href="https://www.youtube.com/watch?v=efR1C6CvhmE">Support Vector Machine</a>. If you don’t have a background in Machine Learning  and/or suffer from mathematical anxiety, libraries like sci-kit lets you use these algorithms in your python notebook by adding a few lines of <a href="https://scikit-learn.org/stable/supervised_learning.html">code</a>.</p>
+
+<p>Full project can be found <a href="https://github.com/BhuwanDutt/">here</a> on my github.<br />
+Now, all these models comes under Supervised learning. But what is <a href="https://www.datacamp.com/blog/supervised-machine-learning">Supervised learning</a> you may ask. Simply put, it’s to teach Machine the correct answer by giving it a few exmaples for which we already know the label for. The already labelled data is called training data. 
+But the data we fetched from the twitter doens’t have the sentiment label attached to it. So to train our dataset,I  will use the <a href="https://www.kaggle.com/datasets/kazanova/sentiment140">dataset</a> which contains 1.6 million labelled tweets. You can search for a sentiment analysis labelled dataset</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">metrics</span>
+    <span class="kn">from</span> <span class="nn">sklearn.pipeline</span> <span class="kn">import</span> <span class="n">Pipeline</span>
+    <span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LogisticRegression</span>
+    
+    <span class="n">tfidf</span> <span class="o">=</span> <span class="n">TfidfVectorizer</span><span class="p">(</span><span class="n">tokenizer</span> <span class="o">=</span> <span class="n">spacy_tokenizer</span><span class="p">)</span>
+    
+    <span class="n">LR_classifier</span> <span class="o">=</span> <span class="n">LogisticRegression</span><span class="p">(</span> <span class="n">max_iter</span><span class="o">=</span><span class="mi">10000</span><span class="p">)</span>
+   
+    <span class="c1"># model generation
+</span>    <span class="n">LR_classifier</span><span class="p">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span><span class="n">y_train</span><span class="p">)</span>
+    <span class="n">predicted</span> <span class="o">=</span> <span class="o">=</span> <span class="n">LR_classifier</span><span class="p">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'Logistic Regression with BOW'</span><span class="p">,</span><span class="n">metrics</span><span class="p">.</span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">predicted</span><span class="p">))</span>
+</code></pre></div></div>
+
+<!---
+#### Bias and Variance
+
+In machine learning, we often train models to make predictions or decisions based on data. Bias and variance are two important concepts that help us understand how well our model performs.  
+
+Bias refers to the error that occurs due to the simplifying assumptions made by the model. A model with high bias tends to be too simple, making strong assumptions that may not be realistic. For example, if we  have a linear regression model to predict housing prices but the model assumes that the relationship between 
+the features and the price is always a straight line, it might struggle to capture more complex patterns, leading to high bias.
+
+Variance, on the other hand, refers to the amount that the predictions of a model vary for different training sets. 
+It measures the model's sensitivity to the specific data points it's trained on. A model with high variance is overly 
+complex and can "overfit" the training data. This leads to poor performance when the model encounters new, unseen data.
+To achieve good predictive performance, we aim to strike a balance between bias and variance. 
+This is known as the bias-variance tradeoff.
+We want our model to have enough complexity to capture the underlying patterns in the data (low bias) while avoiding
+over-fitting and maintaining generalizability (low variance).
+Understanding bias and variance allows us to diagnose and address issues with our models.
+--->
+
+<h1 id="references">References</h1>
+
+<hr />
+
+<p>Josh Starmer : <a href="https://www.youtube.com/watch?v=O2L2Uv9pdDA">Naive Bayes</a>, <a href="https://www.youtube.com/watch?v=J4Wdy0Wc_xQ">Random Forest</a></p>
 
         
       </section>
@@ -353,6 +477,16 @@ emojis, hashtags, shorthands, to keep things a little entertaining.</p>
 
 
       
+  <nav class="pagination">
+    
+      <a href="#" class="pagination--pager disabled">Previous</a>
+    
+    
+      <a href="/Project2/" class="pagination--pager" title="Create XRaY Images using GAN’S
+">Next</a>
+    
+  </nav>
+
     </div>
 
     
@@ -365,9 +499,49 @@ emojis, hashtags, shorthands, to keep things a little entertaining.</p>
       <div class="grid__wrapper">
         
           
-            
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/Project2/" rel="permalink">Create XRaY Images using GAN’S
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Introduction
+
+</p>
+  </article>
+</div>
+
+        
       </div>
     </div>
+  
   
 </div>
 
