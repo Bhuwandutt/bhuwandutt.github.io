@@ -1,7 +1,9 @@
 ---
 layout: single
-title: "about me"
+title: About
+permalink: /about/
 ---
+
 
 # **BHUWAN DUTT**
 --------------------------------------------------------------

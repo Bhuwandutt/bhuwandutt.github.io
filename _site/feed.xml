@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-06-03T00:57:38-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Bhuwan Portfolio</title><subtitle>Hi welcome to my portfolio website. Yopu can reach out to me on through my email or linkedIn</subtitle><author><name>Bhuwan Dutt</name></author><entry><title type="html">Create XRaY Images using GAN’S</title><link href="http://localhost:4000/Project2/" rel="alternate" type="text/html" title="Create XRaY Images using GAN’S" /><published>2023-02-27T00:00:00-05:00</published><updated>2023-02-27T00:00:00-05:00</updated><id>http://localhost:4000/project2</id><content type="html" xml:base="http://localhost:4000/Project2/">&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-06-03T12:37:53-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Bhuwan Portfolio</title><subtitle>Hi welcome to my portfolio website. Yopu can reach out to me on through my email or linkedIn</subtitle><author><name>Bhuwan Dutt</name></author><entry><title type="html">Create XRaY Images using GAN’S</title><link href="http://localhost:4000/Project2/" rel="alternate" type="text/html" title="Create XRaY Images using GAN’S" /><published>2023-02-27T00:00:00-05:00</published><updated>2023-02-27T00:00:00-05:00</updated><id>http://localhost:4000/project2</id><content type="html" xml:base="http://localhost:4000/Project2/">&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
 
 &lt;p&gt;Before Dall-E.2, Imagen, Stable Diffusion and all these magical AI artists came into this world, there was an algorithm (that is so intituitive and simple in it’s foundation) lying around that gives comparable performance, if not better than the general purpose LIMs and don’t need so much computation reseources.&lt;/p&gt;
 
@@ -11,19 +11,16 @@
 &lt;p&gt;The task was to be achieved by completeting two subtasks&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Identify Drug Name, Dosage, Durations and other entities.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Create two relations&lt;/p&gt;
+  &lt;li&gt;Identify Drug Name, Dosage, Durations and other entities.&lt;/li&gt;
+  &lt;li&gt;Create two relations
     &lt;ul&gt;
       &lt;li&gt;the relation of &lt;strong&gt;drug&lt;/strong&gt; with &lt;strong&gt;symptoms&lt;/strong&gt; and &lt;strong&gt;diseases&lt;/strong&gt;.&lt;/li&gt;
-      &lt;li&gt;the relation of &lt;strong&gt;drugs&lt;/strong&gt; with &lt;strong&gt;Adverse Drug Event&lt;/strong&gt; (ADE).&lt;/li&gt;
+      &lt;li&gt;the relation of &lt;strong&gt;drugs&lt;/strong&gt; with &lt;strong&gt;Adverse Dru Event&lt;/strong&gt; (ADE).&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h4 id=&quot;who-defines-adverse-drug-event-ade-as-an-injury-resulting-from-medical-intervention-related-to-a-drug-eg-drug-administration-errors&quot;&gt;WHO defines Adverse Drug Event (ADE) as “an injury resulting from medical intervention related to a drug”. Eg. Drug administration errors.&lt;/h4&gt;</content><author><name>Bhuwan Dutt</name></author><summary type="html">The Dataset</summary></entry><entry><title type="html">Analyse Public Opinion of Covid Vaccines</title><link href="http://localhost:4000/Project1/" rel="alternate" type="text/html" title="Analyse Public Opinion of Covid Vaccines" /><published>2023-01-27T00:00:00-05:00</published><updated>2023-01-27T00:00:00-05:00</updated><id>http://localhost:4000/birthday</id><content type="html" xml:base="http://localhost:4000/Project1/">&lt;h1 id=&quot;background&quot;&gt;Background&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;WHO defines Adverse Drug Event (ADE) as “an injury resulting from medical intervention related to a drug”. Eg. Drug administration errors.&lt;/em&gt;&lt;/p&gt;</content><author><name>Bhuwan Dutt</name></author><summary type="html">The Dataset</summary></entry><entry><title type="html">Analyse Public Opinion of Covid Vaccines</title><link href="http://localhost:4000/Project1/" rel="alternate" type="text/html" title="Analyse Public Opinion of Covid Vaccines" /><published>2023-01-27T00:00:00-05:00</published><updated>2023-01-27T00:00:00-05:00</updated><id>http://localhost:4000/birthday</id><content type="html" xml:base="http://localhost:4000/Project1/">&lt;h1 id=&quot;background&quot;&gt;Background&lt;/h1&gt;
 
 &lt;hr /&gt;
 &lt;p&gt;I did this project back in March 2021. I had just started with my Masters in Computer Science program and because of the
@@ -155,6 +152,8 @@ But the data we fetched from the twitter doens’t have the sentiment label atta
     &lt;span class=&quot;n&quot;&gt;predicted&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LR_classifier&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;predict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X_test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;Logistic Regression with BOW&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;metrics&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;accuracy_score&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y_test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;predicted&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h1 id=&quot;results&quot;&gt;Results&lt;/h1&gt;
+&lt;hr /&gt;
 
 &lt;!---
 #### Bias and Variance
