@@ -1,10 +1,29 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-05-20T23:30:44-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Bhuwan Portfolio</title><subtitle>Hi welcome to my portfolio website. Yopu can reach out to me on through my email or linkedIn</subtitle><author><name>Bhuwan Dutt</name></author><entry><title type="html">Create XRaY Images using GAN’S</title><link href="http://localhost:4000/Project2/" rel="alternate" type="text/html" title="Create XRaY Images using GAN’S" /><published>2023-02-27T00:00:00-05:00</published><updated>2023-02-27T00:00:00-05:00</updated><id>http://localhost:4000/project2</id><content type="html" xml:base="http://localhost:4000/Project2/">&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-05-23T21:07:26-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Bhuwan Portfolio</title><subtitle>Hi welcome to my portfolio website. Yopu can reach out to me on through my email or linkedIn</subtitle><author><name>Bhuwan Dutt</name></author><entry><title type="html">Create XRaY Images using GAN’S</title><link href="http://localhost:4000/Project2/" rel="alternate" type="text/html" title="Create XRaY Images using GAN’S" /><published>2023-02-27T00:00:00-05:00</published><updated>2023-02-27T00:00:00-05:00</updated><id>http://localhost:4000/project2</id><content type="html" xml:base="http://localhost:4000/Project2/">&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
 
 &lt;p&gt;Before Dall-E.2, Imagen, Stable Diffusion and all these magical AI artists came into this world, there was an algorithm (that is so intituitive and simple in it’s foundation) lying around that gives comparable performance, if not better than the general purpose LIMs and don’t need so much computation reseources.&lt;/p&gt;
 
 &lt;h2 id=&quot;gans&quot;&gt;GANs&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://arxiv.org/abs/1406.2661&quot;&gt;Generative Adversial Networks&lt;/a&gt;, proposed by the team at University of Montreal (that included the AI pioneer and bookwriter Ian J. Goodfellow) ,&lt;/p&gt;</content><author><name>Bhuwan Dutt</name></author><summary type="html">Introduction</summary></entry><entry><title type="html">Analyse Public Opinion of Covid Vaccines</title><link href="http://localhost:4000/Project1/" rel="alternate" type="text/html" title="Analyse Public Opinion of Covid Vaccines" /><published>2023-01-27T00:00:00-05:00</published><updated>2023-01-27T00:00:00-05:00</updated><id>http://localhost:4000/birthday</id><content type="html" xml:base="http://localhost:4000/Project1/">&lt;h1 id=&quot;background&quot;&gt;Background&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://arxiv.org/abs/1406.2661&quot;&gt;Generative Adversial Networks&lt;/a&gt;, proposed by the team at University of Montreal (that included the AI pioneer and bookwriter Ian J. Goodfellow) ,&lt;/p&gt;</content><author><name>Bhuwan Dutt</name></author><summary type="html">Introduction</summary></entry><entry><title type="html">Fine-Tune a BioBERT model on n2c2 dataset</title><link href="http://localhost:4000/Project3/" rel="alternate" type="text/html" title="Fine-Tune a BioBERT model on n2c2 dataset" /><published>2023-02-05T00:00:00-05:00</published><updated>2023-02-05T00:00:00-05:00</updated><id>http://localhost:4000/BIOBERT</id><content type="html" xml:base="http://localhost:4000/Project3/">&lt;h2 id=&quot;the-dataset&quot;&gt;The Dataset&lt;/h2&gt;
+
+&lt;p&gt;n2c2, a wordplay on i2b2, is a dataset created for a competetion hosted by Harvard University. The task was to create a set of medical documents in which different information related to drugs are annotated.&lt;/p&gt;
+
+&lt;p&gt;The task was to be achieved by completeting two subtasks&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Identify Drug Name, Dosage, Durations and other entities.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Create two relations&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;the relation of &lt;strong&gt;drug&lt;/strong&gt; with &lt;strong&gt;symptoms&lt;/strong&gt; and &lt;strong&gt;diseases&lt;/strong&gt;.&lt;/li&gt;
+      &lt;li&gt;the relation of &lt;strong&gt;drugs&lt;/strong&gt; with &lt;strong&gt;Adverse Drug Event&lt;/strong&gt; (ADE).&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;who-defines-adverse-drug-event-ade-as-an-injury-resulting-from-medical-intervention-related-to-a-drug-eg-drug-administration-errors&quot;&gt;WHO defines Adverse Drug Event (ADE) as “an injury resulting from medical intervention related to a drug”. Eg. Drug administration errors.&lt;/h4&gt;</content><author><name>Bhuwan Dutt</name></author><summary type="html">The Dataset</summary></entry><entry><title type="html">Analyse Public Opinion of Covid Vaccines</title><link href="http://localhost:4000/Project1/" rel="alternate" type="text/html" title="Analyse Public Opinion of Covid Vaccines" /><published>2023-01-27T00:00:00-05:00</published><updated>2023-01-27T00:00:00-05:00</updated><id>http://localhost:4000/birthday</id><content type="html" xml:base="http://localhost:4000/Project1/">&lt;h1 id=&quot;background&quot;&gt;Background&lt;/h1&gt;
 
 &lt;hr /&gt;
 &lt;p&gt;I did this project back in March 2021. I had just started with my Masters in Computer Science program and because of the
